@@ -1,11 +1,18 @@
-import './App.css';
-import './styles/main.scss'
+import './styles/main.scss';
+import { Route, Routes } from 'react-router';
+import SignIn from './pages/SignIn';
+
 
 function App() {
   return (
-    <div>
-		hello
-    </div>
+	<Routes>
+		<Route path='/signin'>
+			<SignIn />
+		</Route>
+		<PrivateRoute>
+			
+		</PrivateRoute>
+	</Routes>
   );
 }
 
